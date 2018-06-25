@@ -54,15 +54,13 @@ class FrontController
      */
     public function __construct($plugin_name, $version)
     {
-
         $this->plugin_name = $plugin_name;
         $this->version = $version;
-
     }
 
-    public function my_wpseo_breadcrumb_links($links)
+    // Yoast breadcrumb fix
+    public function my_wpseo_breadcrumb_links(string $links): string
     {
-
         if (is_single()) {
             $cpt_object = get_post_type_object(get_post_type());
             if (!$cpt_object->_builtin) {
@@ -74,7 +72,6 @@ class FrontController
                 ]);
             }
         }
-
         return $links;
     }
 

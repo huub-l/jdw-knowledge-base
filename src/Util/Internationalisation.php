@@ -8,7 +8,7 @@ declare(strict_types=1);
  * Loads and defines the internationalization files for this plugin
  * so that it is ready for translation.
  *
- * @link       http://example.com
+ * @link       https://jelledamen.nl
  * @since      1.0.0
  */
 
@@ -20,7 +20,7 @@ namespace Jdw\KnowledgeBase\Util;
  * Loads and defines the internationalization files for this plugin
  * so that it is ready for translation.
  *
- * @link       http://example.com
+ * @link       https://jelledamen.nl
  * @since      1.0.0
  */
 
