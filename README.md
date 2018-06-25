@@ -1,1 +1,1 @@
-jdw-knowledge-base
+A simple wordpress plugin for creating knowledge base pages

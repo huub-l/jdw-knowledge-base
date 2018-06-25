@@ -1,0 +1,24 @@
+{
+  "name": "jdw/knowledgebase",
+  "description": "A simple wordpress plugin for creating knowledge base pages",
+  "type": "wordpress-plugin",
+  "keywords": [
+    "wordpress"
+  ],
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "Jelle Damen",
+      "email": "info@jelledamen.nl",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "JdwKnowledgeBase\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=7.1"
+  },
+}
