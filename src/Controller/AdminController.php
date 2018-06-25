@@ -39,17 +39,17 @@ class AdminController
     public function new_cpt_jdw_knowledge_base(): void
     {
         $labels = [
-            'name'               => __('Knowledge Base'),
-            'singular_name'      => __('Knowledge Base'),
-            'menu_name'          => __('Knowledge Base'),
-            'name_admin_bar'     => __('Knowledge Base'),
+            'name'               => 'Kennisbank',
+            'singular_name'      => 'Kennisbank',
+            'menu_name'          => 'Kennisbank',
+            'name_admin_bar'     => 'Kennisbankpagina',
             'add_new'            => __('New Page'),
             'add_new_item'       => __('Add New Page'),
             'new_item'           => __('New Page'),
             'edit_item'          => __('Edit Page'),
             'view_item'          => __('View Page'),
             'all_items'          => __('All Pages'),
-            'search_items'       => __('Search Knowledge Base Page'),
+            'search_items'       => __('Search Page'),
             'not_found'          => __('Not Found'),
             'not_found_in_trash' => __('Not found in Trash')
         ];
@@ -61,7 +61,7 @@ class AdminController
             'show_ui'             => true,
             'show_in_menu'        => true,
             'query_var'           => true,
-            'rewrite'             => ['slug' => __('knowledge-base'), 'with_front' => false],
+            'rewrite'             => ['slug' => 'kennisbank', 'with_front' => false],
             'capability_type'     => 'page',
             'hierarchical'        => false,
             'menu_position'       => 20,
