@@ -27,13 +27,23 @@ class Activator
      */
     public static function activate(): void
     {
-        $arg = [
-            'post_title'  => 'Kennisbank',
-            'post_status' => 'publish',
-            'post_author' => get_current_user_id(),
-            'post_type'   => 'page'
+        // first check if knowledge base page exist
+        $args_posts1 = [
+            'post_type'     => 'page',
+            'post_status'   => 'any',
+            'name'          => 'Kennisbank',
+            'post_per_page' => 1
         ];
+        $get_posts = new \WP_Query($args_posts1);
+        if (! $get_posts->have_posts()) {
 
-        wp_insert_post($arg);
+            $arg = [
+                'post_type'   => 'page',
+                'post_title'  => 'Kennisbank',
+                'post_status' => 'publish',
+                'post_author' => get_current_user_id()
+            ];
+            wp_insert_post($arg);
+        }
     }
 }
